@@ -1,0 +1,191 @@
+* {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        
+        }
+
+        body {
+        background-color: #f3f2ef;
+        direction: ltr;
+        }
+
+        .navbar {
+        background-color: #ffffff;
+        border-bottom: 1px solid #e0e0e0;
+        padding: 0;
+        position: fixed;
+        top: 0;
+        width: 100%;
+        z-index: 1000;
+        box-shadow: 0 0 0 1px rgba(0,0,0,0.08), 0 2px 4px rgba(0,0,0,0.08);
+        }
+
+        .nav-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            height: 60px;
+            padding: 0 16px;
+        }
+
+        .nav-logo {
+            margin-right: 8px;
+            margin-left: 24px;
+        }
+
+        .nav-logo svg {
+            width: 34px;
+            height: 34px;
+            fill: #0a66c2;
+        }
+
+        .nav-search {
+            flex: 1;
+            max-width: 280px;
+            position: relative;
+            margin-right: 12px;
+        }
+
+        .nav-search input {
+            width: 100%;
+            padding: 6px 40px 6px 8px;
+            background-color: #eef3f8;
+            border: none;
+            border-radius: 6px;
+            font-size: 14px;
+            color: #000000;
+            outline: none;
+            transition: all 0.2s ease;
+        }
+
+        .nav-search input::placeholder {
+            color: #666666;
+        }
+
+        .nav-search input:focus {
+            background-color: #ffffff;
+            box-shadow: 0 0 0 2px #0a66c2;
+        }
+
+        .search-icon {
+            position: absolute;
+            left: 12px;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 16px;
+            height: 16px;
+            fill: #666666;
+        }
+
+        .nav-items {
+            display: flex;
+            align-items: center;
+            list-style: none;
+            margin-left: auto;
+            gap: 4px;
+        }
+
+        .nav-item {
+            position: relative;
+        }
+
+        .nav-link {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 6px 12px;
+            text-decoration: none;
+            color: #666666;
+            transition: color 0.2s ease;
+            border-radius: 8px;
+            min-width: 80px;
+        }
+
+        .nav-link:hover {
+            color: #000000;
+            background-color: #f3f2ef;
+        }
+
+        .nav-link.active {
+            color: #0a66c2;
+        }
+
+        .nav-link.active::after {
+            content: '';
+            position: absolute;
+            bottom: -1px;
+            left: 0;
+            right: 0;
+            height: 2px;
+            background-color: #0a66c2;
+        }
+
+        .nav-icon {
+            width: 24px;
+            height: 24px;
+            margin-bottom: 2px;
+            fill: currentColor;
+        }
+
+        .nav-text {
+            font-size: 12px;
+            line-height: 1.33333;
+            font-weight: 400;
+        }
+
+        .nav-divider {
+            width: 1px;
+            height: 24px;
+            background-color: #e0e0e0;
+            margin: 0 8px;
+        }
+
+        .nav-premium {
+            color: #915907;
+            text-align: center;
+            padding: 6px 12px;
+            text-decoration: none;
+            font-size: 12px;
+            font-weight: 600;
+            border-radius: 8px;
+            transition: background-color 0.2s ease;
+        }
+
+        .nav-premium:hover {
+            background-color: #f3f2ef;
+        }
+
+        .nav-premium .premium-text {
+            border-bottom: 1px solid currentColor;
+        }
+
+        .profile-dropdown {
+            position: relative;
+        }
+
+        .profile-pic {
+            width: 24px;
+            height: 24px;
+            border-radius: 50%;
+            background-color: #666666;
+            margin-bottom: 2px;
+        }
+
+        .notification-badge {
+            position: absolute;
+            top: -2px;
+            right: -2px;
+            background-color: #e16745;
+            color: white;
+            border-radius: 50%;
+            width: 16px;
+            height: 16px;
+            font-size: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 600;
+        }
+
